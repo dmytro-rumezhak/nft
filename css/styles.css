@@ -140,6 +140,10 @@ body {
   line-height: 1.2;
   color: var(--nav-color);
 }
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--nav-active-color);
+}
 .header-nav-active {
   color: var(--nav-active-color);
 }
@@ -169,6 +173,10 @@ body {
 .hero {
   padding-top: 180px;
   padding-bottom: 131px;
+  background-image: url('../img/gradient.png');
+  background-repeat: no-repeat;
+  background-size: 1685px;
+  background-position: center;
 }
 .hero > .container {
   position: relative;
@@ -228,23 +236,27 @@ body {
   top: 0;
   width: 712px;
   height: 583px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   background-image: url('../img/hero-img.png');
   background-repeat: no-repeat;
   background-size: 711px;
 }
-.hero-top-img,
-.hero-center-img,
-.hero-bottom-img {
-  display: flex;
-  align-items: flex-end;
+.hero-list-img {
+  display: grid;
+  grid-template-columns: 185px 185px 185px 185px;
+  justify-content: end;
+  grid-gap: 5px;
   margin-top: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
-.hero-img {
-  margin-right: 5px;
+.hero-item-img:nth-child(1),
+.hero-item-img:nth-child(4) {
+  grid-column: span 2;
+  align-self: end;
+  justify-self: end;
+}
+.hero-item-img:nth-child(7) {
+  align-self: end;
+  justify-self: end;
 }
 
 /* ---------- NFT Assets Itam ----------- */
@@ -254,6 +266,7 @@ body {
 }
 .title-section {
   display: inline-block;
+  margin-bottom: 31px;
   font-weight: 600;
   font-size: 40px;
   line-height: 1.25;
@@ -267,4 +280,37 @@ body {
   margin-top: 10px;
   background-image: url('../img/title-border.svg');
   background-size: cover;
+}
+.assets-container-desc {
+  display: flex;
+  align-items: flex-start;
+}
+.assets-desc {
+  width: 570px;
+  margin-right: 60px;
+  color: var(--text-title-desc);
+}
+.assets-btn-list {
+  display: flex;
+  padding: 10px 30px;
+  background: var(--bg-header-color);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25), -2px -5px 10px rgba(109, 109, 109, 0.15);
+  border-radius: 5px;
+}
+.assets-btn-item {
+}
+.assets-btn-item:not(:last-child) {
+  margin-right: 14px;
+}
+.assets-item-btn {
+  padding: 10px 12px;
+  line-height: 1.5;
+  color: #e5e5e5;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.assets-item-btn:hover,
+.assets-item-btn:focus {
+  background-color: var(--accent-color);
 }
