@@ -1,0 +1,270 @@
+/* Ширина контейнера 1320px хоча деякі секції мають від 1318px до 1322px взяв середнє*/
+
+:root {
+  --bg-header-color: #212428;
+  --bg-body-color: #1f2125;
+  --accent-color: #ff014f;
+  --nav-color: #626770;
+  --nav-active-color: #e2e2e3;
+  --text-title-desc: #989ca2;
+  --text-body-color: #ffffff;
+  --title-body-color: #cedff6;
+  --text-items-color: #c4c4c4;
+  --title-items-coin-color: #c4cfde;
+  --desc-items-coin-color: #bac5d3;
+  --price-coin-color: #747474;
+  --price-plus-first-color: #adfe00;
+  --price-plus-second-color: #f27a6b;
+  --bg-category-item-color: #23252b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: var(--bg-body-color);
+}
+
+.container {
+  width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* -------------- HEADER ----------- */
+.header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+  background: var(--bg-header-color);
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.17);
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  display: block;
+  margin-right: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.23;
+  color: var(--accent-color);
+}
+.header-form {
+  position: relative;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 67px;
+}
+.header-form-input {
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-body-color);
+  border: none;
+  border-radius: 30px;
+  background-color: #343842;
+}
+.header-form-input::placeholder {
+  color: var(--title-items-coin-color);
+}
+.header-form-btn {
+  position: absolute;
+  right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.header-form-btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--title-items-coin-color);
+}
+.header-nav-list {
+  display: flex;
+  margin-right: 60px;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-nav-link {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--nav-color);
+}
+.header-nav-active {
+  color: var(--nav-active-color);
+}
+.header-btn-list {
+  display: flex;
+}
+.header-btn-item:not(:last-child) {
+  margin-right: 20px;
+}
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-body-color);
+  padding: 13px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 30px;
+}
+.btn-no-active {
+  background-color: transparent;
+}
+.btn-active {
+  background-color: var(--accent-color);
+}
+
+/* ------------ HERO ----------- */
+.hero {
+  padding-top: 180px;
+  padding-bottom: 131px;
+}
+.hero > .container {
+  position: relative;
+}
+.hero-left {
+  width: 768px;
+  padding-top: 74px;
+  background-color: transparent;
+}
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.5;
+
+  text-transform: capitalize;
+
+  color: var(--title-body-color);
+}
+.hero-desc {
+  width: 741px;
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: var(--text-title-desc);
+}
+.hero-btn-list {
+  display: flex;
+  align-items: center;
+}
+.hero-btn-item:not(:last-child) {
+  margin-right: 30px;
+}
+.hero-btn {
+  padding: 11px 19px 12px 19px;
+  font-size: 24px;
+  line-height: 1.25;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.hero-btn-active {
+  background: var(--accent-color);
+}
+.hero-btn-no-active {
+  border: 1px solid var(--accent-color);
+}
+.hero-right {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 712px;
+  height: 583px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url('../img/hero-img.png');
+  background-repeat: no-repeat;
+  background-size: 711px;
+}
+.hero-top-img,
+.hero-center-img,
+.hero-bottom-img {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.hero-img {
+  margin-right: 5px;
+}
+
+/* ---------- NFT Assets Itam ----------- */
+.section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.title-section {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.25;
+
+  color: var(--title-body-color);
+}
+.title-section::after {
+  content: '';
+  display: block;
+  height: 16px;
+  margin-top: 10px;
+  background-image: url('../img/title-border.svg');
+  background-size: cover;
+}
