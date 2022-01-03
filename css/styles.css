@@ -286,9 +286,10 @@ body {
   margin-top: 10px;
   height: 16px;
 }
-.assets-container-desc {
+.section-container-desc {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
 .assets-desc {
@@ -526,22 +527,18 @@ body {
 .category-section-title::after {
   height: 20px;
 }
-.category-container-desc {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-.category-desc {
+.section-desc {
   max-width: 561px;
   font-size: 24px;
   line-height: 1.25;
   color: var(--text-title-desc);
 }
-.category-btn {
+.btn-section-desc {
   display: flex;
   align-items: center;
-  padding: 13px 27px 12px 24px;
+  justify-content: center;
+  min-width: 195px;
+  padding: 13px 2px 12px 2px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.25;
@@ -550,7 +547,7 @@ body {
   border: none;
   border-radius: 30px;
 }
-.category-btn-icon {
+.btn-section-desc-icon {
   width: 20px;
   height: 20px;
   margin-left: 10px;
@@ -680,4 +677,17 @@ body {
 .category-link:hover .category-item-desc-text-selected,
 .category-link:focus .category-item-desc-text-selected {
   color: #00acee;
+}
+
+/* ---------- Top Sellers --------- */
+.sellers-section-title::after {
+  height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sellers-desc {
+  width: 553px;
+  color: var(--text-body-color);
 }
