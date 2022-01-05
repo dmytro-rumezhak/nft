@@ -691,3 +691,50 @@ body {
   width: 553px;
   color: var(--text-body-color);
 }
+
+.sellers-main-list {
+  display: flex;
+  align-items: flex-start;
+}
+.sellers-main-item {
+  flex-basis: calc(100% / 2 - 30px);
+  padding: 20px;
+  background: linear-gradient(160.69deg, #23252b -0.44%, #17191d 99.01%);
+  box-shadow: 4px -4px 10px rgba(80, 80, 80, 0.3);
+  border-radius: 10px;
+}
+.sellers-main-item:not(:last-child) {
+  margin-right: 30px;
+}
+.sellers-minor-list {
+}
+.sellers-minor-item {
+  outline: 1px solid red;
+}
+.sellers-minor-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.sellers-minor-avatar {
+  width: 80px;
+  height: 80px;
+  background: #5a6478;
+  border-radius: 10px;
+}
+.sellers-minor-desc {
+}
+.sellers-minor-name {
+}
+.sellers-minor-price {
+  display: flex;
+  align-items: center;
+}
+.sellers-minor-price-icon {
+  width: 20px;
+  height: 20px;
+}
+.sellers-minor-price-text {
+}
+.sellers-minor-incon-first {
+}
