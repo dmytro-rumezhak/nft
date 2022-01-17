@@ -790,12 +790,12 @@ body {
   margin-bottom: -30px;
 }
 .creat-item {
+  position: relative;
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 .creat-link {
-  position: relative;
   display: block;
   padding: 20px 5px 53px 10px;
   background: var(--bg-category-item-color);
@@ -833,8 +833,11 @@ body {
 }
 .creat-link:hover .creat-item-title,
 .creat-link:focus .creat-item-title {
-  font-size: 29px;
   color: var(--accent-color);
+}
+.creat-item:not(:nth-child(3)) > .creat-link:hover .creat-item-title,
+.creat-item:not(:nth-child(3)) > .creat-link:focus .creat-item-title {
+  font-size: 29px;
 }
 .creat-item-desc {
   font-size: 18px;
@@ -859,13 +862,13 @@ body {
   height: 20px;
   fill: var(--accent-color);
 }
-.creat-link:hover .creat-item-btn,
-.creat-link:focus .creat-item-btn {
+.creat-link:hover + .creat-item-btn,
+.creat-link:focus + .creat-item-btn {
   background-color: var(--accent-color);
   border-color: transparent;
 }
-.creat-link:hover .creat-item-btn-icon,
-.creat-link:focus .creat-item-btn-icon {
+.creat-link:hover + .creat-item-btn > .creat-item-btn-icon,
+.creat-link:focus + .creat-item-btn > .creat-item-btn-icon {
   fill: var(--text-body-color);
 }
 
@@ -902,6 +905,7 @@ body {
   margin-right: -30px;
 }
 .products-item {
+  position: relative;
   flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
   margin-right: 30px;
@@ -921,7 +925,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 .products-item-container-desc {
-  padding: 10px 15px 20px 15px;
+  padding: 10px 15px 80px 15px;
 }
 .products-time-list {
   margin: 0 auto;
@@ -980,7 +984,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px dashed #505050;
 }
@@ -1011,6 +1014,9 @@ body {
   color: var(--price-coin-color);
 }
 .products-item-container-button {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
   display: flex;
   align-items: center;
 }
@@ -1028,8 +1034,8 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
 }
-.products-link:hover .products-item-btn,
-.products-link:focus .products-item-btn {
+.products-link:hover + .products-item-container-button > .products-item-btn,
+.products-link:focus + .products-item-container-button > .products-item-btn {
   background-color: var(--accent-color);
   border: 1px solid transparent;
 }
