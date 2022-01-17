@@ -1060,3 +1060,72 @@ body {
   width: 15px;
   height: 15px;
 }
+
+/* ---------- Start your own collection today ----------- */
+.collection-section-title {
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+.collection-desc {
+  max-width: 740px;
+  color: var(--text-body-color);
+}
+.collection-btn {
+  font-size: 22px;
+  line-height: 1.36;
+  color: var(--title-body-color);
+}
+.collection-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-right: -30px;
+}
+.collection-item {
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.collection-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 48px 42px 48px;
+
+  background: var(--bg-category-item-color);
+  box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.43), 4px -4px 10px rgba(80, 80, 80, 0.3);
+  border-radius: 10px;
+}
+.collection-link:hover,
+.collection-link:focus {
+  background: linear-gradient(133.27deg, #23252b 3%, #17191d 98.83%);
+}
+.collection-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.collection-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--title-items-coin-color);
+}
+.collection-link:hover .collection-title,
+.collection-link:focus .collection-title {
+  color: var(--accent-color);
+}
+.collection-item-desc {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--desc-items-coin-color);
+}
