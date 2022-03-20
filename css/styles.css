@@ -1129,3 +1129,66 @@ body {
 
   color: var(--desc-items-coin-color);
 }
+
+/* footer */
+.footer-container {
+  display: flex;
+}
+.footer-left-container {
+  width: 277px;
+  margin-right: 33px;
+}
+.footer-list {
+  display: flex;
+}
+.footer-item {
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.footer-desc {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--text-items-color);
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-item {
+  border-radius: 50%;
+}
+.footer-social-item:nth-child(1) {
+  background-color: #3d83f6;
+}
+.footer-social-item:nth-child(2) {
+  background-color: #38bdf8;
+}
+.footer-social-item:nth-child(3) {
+  background-color: #ee4a4a;
+}
+.footer-social-item:nth-child(4) {
+  background-color: #2563eb;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-social-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+}
