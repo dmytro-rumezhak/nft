@@ -623,7 +623,9 @@ body {
   border: 1px solid var(--text-body-color);
 }
 .category-link:hover ~ .category-link-arrow-btn::before,
-.category-link:focus ~ .category-link-arrow-btn::before {
+.category-link:focus ~ .category-link-arrow-btn::before,
+.category-link-arrow-btn:hover.category-link-arrow-btn::before,
+.category-link-arrow-btn:focus.category-link-arrow-btn::before  {
   content: '';
   position: absolute;
   top: 0;
@@ -634,6 +636,7 @@ body {
   background: #cf0808;
   filter: blur(10px);
 }
+
 .left-arrow {
   left: 10px;
 }
@@ -1133,15 +1136,13 @@ body {
 /* footer */
 .footer-container {
   display: flex;
+  margin-bottom: 60px;
 }
 .footer-left-container {
-  width: 277px;
-  margin-right: 33px;
+  margin-right: 30px;
 }
 .footer-list {
   display: flex;
-}
-.footer-item {
 }
 .footer-logo {
   display: inline-block;
@@ -1153,6 +1154,7 @@ body {
   color: var(--accent-color);
 }
 .footer-desc {
+  width: 277px;
   margin-bottom: 40px;
   font-size: 20px;
   line-height: 1.2;
@@ -1191,4 +1193,70 @@ body {
 .footer-social-icon {
   width: 20px;
   height: 20px;
+}
+.footer-item:nth-child(1) {
+  min-width: 254px;
+}
+.footer-item:nth-child(2) {
+  min-width: 212px;
+}
+.footer-item:nth-child(3) {
+  flex-grow: 1;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 60px;
+}
+.footer-title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.23;
+
+  color: var(--text-body-color);
+}
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 38px;
+}
+.footer-menu-item::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.footer-contact-title {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.23;
+
+  color: var(--text-body-color);
+}
+.footer-menu-link {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.21;
+
+  color: var(--text-body-color);
+}
+.footer-contact-item {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contact-item {
+  margin-bottom: 38px;
+}
+.footer-copyright {
+  border-top: 1px solid var(--text-items-color);
+}
+.footer-copyright-text {
+  margin: 28px 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.17;
+
+  color: var(--text-body-color);
 }
